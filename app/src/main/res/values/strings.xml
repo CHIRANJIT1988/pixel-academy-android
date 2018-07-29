@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">Pixel Academy</string>
+
+    <string name="hint_enter_mobile_no">Mobile No</string>
+    <string name="hint_enter_password">Password</string>
+    <string name="hint_enter_name">Name</string>
+    <string name="hint_otp">Enter OTP</string>
+
+    <string name="hint_address">Address</string>
+    <string name="hint_locality">Locality</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_pincode">Pincode</string>
+
+    <string name="button_sign_up">Sign Up</string>
+    <string name="button_done">Done</string>
+    <string name="button_ping">Ping</string>
+    <string name="button_call">Call Now</string>
+    <string name="button_favourite">Add to Fav</string>
+
+    <string name="title_confirmation_code">OTP not Verifying ? Click Here</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Dialogs -->
+    <string name="AreYouSure">Are you sure?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Add">Add</string>
+    <string name="Save">Save</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Previous">Prev</string>
+    <string name="Next">Next</string>
+    <string name="End">End Test</string>
+    <string name="Edit">Edit</string>
+    <string name="Verify">Verify</string>
+
+</resources>

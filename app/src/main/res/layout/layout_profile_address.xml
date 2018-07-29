@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="0dp"
+    android:foreground="?android:attr/selectableItemBackground" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myTextPrimaryColor"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="ADDRESS DETAILS" />
+
+            <Button
+                android:id="@+id/button_edit_profile"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/Edit"
+                android:background="@drawable/noborder"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/address_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_city_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_toEndOf="@id/address_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/address_icon"
+                android:layout_below="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Address"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/address_icon"
+                android:layout_toEndOf="@+id/address_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/locality_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_city_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/locality"
+                android:layout_toEndOf="@id/locality_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/locality_icon"
+                android:layout_below="@+id/locality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Locality"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/locality_icon"
+                android:layout_toEndOf="@+id/locality_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/city_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_city_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_toEndOf="@id/city_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/city_icon"
+                android:layout_below="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="City"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/city_icon"
+                android:layout_toEndOf="@+id/city_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/state_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_city_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_toEndOf="@id/state_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/state_icon"
+                android:layout_below="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="State"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/state_icon"
+                android:layout_toEndOf="@+id/state_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/country_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_city_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_toEndOf="@id/country_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/country_icon"
+                android:layout_below="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Country"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/pincode_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_city_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/pincode"
+                android:layout_toEndOf="@id/pincode_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/pincode_icon"
+                android:layout_below="@+id/pincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Pincode"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

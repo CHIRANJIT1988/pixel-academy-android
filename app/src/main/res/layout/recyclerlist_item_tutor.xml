@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="1dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="5dp" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/tutor"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/layout_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/profile_image"
+            android:gravity="end">
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="true"
+                android:rating="5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tutor_name"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_below="@+id/layout_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/myTextSecondaryColor"
+            android:textSize="16sp"
+            android:text="Manish Bindra"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tutor_name"
+            android:layout_toEndOf="@+id/profile_image"
+            android:maxLines="1"
+            android:text="Hyderabad"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_below="@+id/location"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Day"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="2"
+                    android:gravity="end"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Hour"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="2"
+                    android:gravity="end"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_fees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_below="@+id/layout_profile"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/fees_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_currency_inr_grey600_24dp"
+                android:text="200"
+                android:textSize="20sp"
+                android:textColor="@color/myTextSecondaryColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_action"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_fees"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white" >
+
+            <Button
+                android:id="@+id/btnPing"
+                style="@style/CustomFlatButtonStyle"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawableStart="@null"
+                android:text="@string/button_ping" />
+
+            <View
+                android:layout_width="1dp"
+                android:paddingTop="5dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnCall"
+                style="@style/CustomFlatButtonStyle"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawableStart="@null"
+                android:text="@string/button_call" />
+
+            <View
+                android:layout_width="1dp"
+                android:paddingTop="5dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnFavourite"
+                style="@style/CustomFlatButtonStyle"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawableStart="@null"
+                android:text="@string/button_favourite" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

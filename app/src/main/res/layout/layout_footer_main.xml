@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_main"
+    style="@style/LayoutFooterStyle"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:minHeight="100dp"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:visibility="gone" >
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:id="@+id/fab_main"
+        android:layout_width="90dp"
+        android:layout_height="90dp" >
+
+        <ImageButton
+            android:id="@+id/ibTutor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            android:src="@drawable/ic_tutor"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

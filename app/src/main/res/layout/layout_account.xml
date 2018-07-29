@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="0dp"
+    android:layout_marginBottom="8dp"
+    android:foreground="?android:attr/selectableItemBackground" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myTextPrimaryColor"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="ACCOUNT DETAILS" />
+
+            <Button
+                android:id="@+id/buttonEditAccount"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="EDIT"
+                android:visibility="gone"
+                android:background="@drawable/noborder"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/account_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_account_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_toEndOf="@id/account_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/account_icon"
+                android:layout_below="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Name"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/account_icon"
+                android:layout_toEndOf="@+id/account_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_phone_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mobile_number"
+                android:layout_toEndOf="@id/phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="+91-0000000000" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/phone_icon"
+                android:layout_below="@+id/mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Mobile"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

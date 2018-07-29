@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/reg_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editName"
+                style="@style/CustomEditTextStyle"
+                android:hint="@string/hint_enter_name"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/myTextSecondaryColor"
+                android:drawableStart="@null" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                style="@style/CustomEditTextStyle"
+                android:hint="@string/hint_enter_mobile_no"
+                android:digits="1234567890"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/myTextSecondaryColor"
+                android:drawableStart="@null" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:minWidth="160dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/myPrimaryColor"
+            android:text="@string/button_sign_up" />
+
+        <Button
+            android:id="@+id/btnConfirmationCode"
+            style="@style/LinkButtonStyle"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/myPrimaryColor"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone"
+            android:text="@string/title_confirmation_code" />
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal|center_vertical" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/myAccentColor"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

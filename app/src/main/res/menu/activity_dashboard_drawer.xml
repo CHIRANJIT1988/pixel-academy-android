@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@null"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@null"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@null"
+            android:title="My Profile" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@null"
+                android:title="Refer a friend" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@null"
+                android:title="Rate us now" />
+        </menu>
+    </item>
+
+</menu>
